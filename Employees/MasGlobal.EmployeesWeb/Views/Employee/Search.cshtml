@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Search Employee";
+}
+
+<div id="viewId" class="container">
+    <div class="row">
+        <div class="col">
+            <h3>Search <small>Employee</small></h3>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col">
+            <input type="text" class="form-control" data-bind="value: value"/>
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn btn-primary" data-bind="click: click" >Search</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <script type="text/html" id="row-template">
+                <tr>
+                    <td data-bind="text: Id"></td>
+                    <td data-format="dd-MM-yyyy" data-bind="text: Created"></td>
+                    <td data-bind="text: Name"></td>
+                    <td data-format="c2" data-bind="text: AnnualSalary"></td>
+                    <td data-format="dd-MM-yyyy" data-bind="text: Updated"></td>
+                </tr>
+            </script>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Created</th>
+                        <th>Name</th>
+                        <th>Annual Salary</th>
+                        <th>Updated</th>
+                    </tr>
+                </thead>
+                <tbody data-template="row-template" data-bind="source: source"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        var viewModel = viewModel = kendo.observable({
+            source: new kendo.data.DataSource({
+                transport: {
+                    read: {
+                        method: "post"
+                    }
+                },
+
+                schema: {
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Created: {
+                                type: "date"
+                            },
+                            Updated: {
+                                type: "date"
+                            },
+                            AnnualSalary: {
+                                type: "number"
+                            }
+                        }
+                    }
+                }
+
+            }),
+            click: function (e) {
+                viewModel.source.read({ id: viewModel.value });
+            },
+            value: null
+        });
+
+        kendo.bind($("#viewId"), viewModel);
+    </script>
+}
+

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.EmployeesData", "MasGlobal.EmployeesData\MasGlobal.EmployeesData.csproj", "{4118E8F9-73AC-4359-A565-6372100286BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.EmployeesWeb", "MasGlobal.EmployeesWeb\MasGlobal.EmployeesWeb.csproj", "{92C5868A-2894-4016-8D94-DDC14582045A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasGlobal.EmployeesTest", "MasGlobal.EmployeesTest\MasGlobal.EmployeesTest.csproj", "{B0ACD69A-E0C3-492A-BF5B-A9C2142D4DF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4118E8F9-73AC-4359-A565-6372100286BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4118E8F9-73AC-4359-A565-6372100286BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4118E8F9-73AC-4359-A565-6372100286BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4118E8F9-73AC-4359-A565-6372100286BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C5868A-2894-4016-8D94-DDC14582045A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C5868A-2894-4016-8D94-DDC14582045A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C5868A-2894-4016-8D94-DDC14582045A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C5868A-2894-4016-8D94-DDC14582045A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0ACD69A-E0C3-492A-BF5B-A9C2142D4DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0ACD69A-E0C3-492A-BF5B-A9C2142D4DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0ACD69A-E0C3-492A-BF5B-A9C2142D4DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0ACD69A-E0C3-492A-BF5B-A9C2142D4DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7482DB2C-DD67-4CA6-BEBB-2AAB17055AC1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ingdotpiza.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MasGlobal.EmployeesData\\MasGlobal.EmployeesData.csproj
+		SccProjectName1 = MasGlobal.EmployeesData
+		SccLocalPath1 = MasGlobal.EmployeesData
+		SccProjectUniqueName2 = MasGlobal.EmployeesWeb\\MasGlobal.EmployeesWeb.csproj
+		SccProjectName2 = MasGlobal.EmployeesWeb
+		SccLocalPath2 = MasGlobal.EmployeesWeb
+		SccProjectUniqueName3 = MasGlobal.EmployeesTest\\MasGlobal.EmployeesTest.csproj
+		SccProjectName3 = MasGlobal.EmployeesTest
+		SccLocalPath3 = MasGlobal.EmployeesTest
+	EndGlobalSection
+EndGlobal
